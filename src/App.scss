@@ -1,0 +1,65 @@
+@use './styles/variables' as v;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: v.$color-dark-grey;
+  gap: 20px;
+  border-radius: 15px;
+
+  section {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  img {
+    max-width: 100px;
+    border-radius: 100%;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  sub {
+    color: v.$color-active;
+    font-weight: 600;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  div:not(.sites) {
+    gap: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$color-white;
+    background-color: v.$color-grey;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+
+    &:hover {
+      color: v.$color-dark-grey;
+    background-color: v.$color-active;
+    }
+  }
+}
